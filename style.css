@@ -1,0 +1,132 @@
+:root {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.primary-nav {
+  background-color: black;
+}
+
+.primary-nav li {
+  display: inline;
+}
+
+.primary-nav li a {
+  text-decoration: none;
+}
+
+.primary-nav div {
+  float: right;
+}
+
+.sticky-nav {
+  background-color: black;
+}
+
+.sticky-nav li {
+  display: inline;
+}
+
+.sticky-nav div {
+  float: right;
+}
+
+.grid-main-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+}
+
+.inline-grid {
+  display: inline-grid;
+  grid-gap: 10px;
+}
+
+.grid-main-section article {
+  background-color: khaki;
+  background-image: url(assets/mini-pig.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.header-article {
+  width: 1255px;
+  height: 544px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  background-color: tomato;
+  padding: 0 20px;
+  max-width: 1192px;
+}
+
+.latest-news-section ul {
+  display: flex;
+  list-style: none;
+  background-color: red;
+}
+
+.inline {
+  display: inline;
+}
+
+.index-co {
+  background-color: royalblue;
+}
+
+.float-link {
+  float: right;
+}
+
+.tile {
+  background-color: royalblue;
+}
+
+.tile img {
+  float: left;
+}
+
+.flex {
+  display: flex;
+  margin-top: 20px;
+}
+
+.tile {
+  margin-right: 1px;
+  width: 25%;
+}
+
+.post {
+  background-color: coral;
+  width: 33.3%;
+  height: 100%;
+  padding: 0 10px 0px 10px;
+}
+
+.post-bg {
+  background-image: url(assets/mini-pig.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 368px;
+  height: 276px;
+}
+
+.latest-post {
+  box-sizing: content-box;
+  background-color: cornflowerblue;
+  margin-top: 10px;
+  padding: 0px 0 0 20px;
+  display: block;
+  height: 96px;
+}
+
+.latest-post h6 {
+  padding-top: 10px;
+}
+
+.latest-post img {
+  width: 96px;
+  height: 96px;
+  float: right;
+}
