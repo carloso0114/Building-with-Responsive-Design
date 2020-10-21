@@ -1,11 +1,3 @@
-:root {
-  box-sizing: border-box;
-}
-
-header {
-    display: block;
-}
-
 .primary-nav {
   background-color: black;
 }
@@ -183,9 +175,9 @@ header {
 }
 
 .quick-links {
-    word-spacing: 0.5em;
-    font-size: 0.8em;
-    padding: 25px 0 25px 0;
+  word-spacing: 0.5em;
+  font-size: 0.8em;
+  padding: 25px 0 25px 0;
 }
 
 .quick-links a{
