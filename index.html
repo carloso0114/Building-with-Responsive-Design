@@ -5,474 +5,499 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TNW</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="screen and (min-width: 1024px)" href="style.css">
+  <link rel="stylesheet" media="screen and (max-width: 1023px)" href="tablet.css">
+  <link rel="stylesheet" media="screen and (max-width: 767px)" href="phone.css">
   <script src="https://use.fontawesome.com/6a167e652a.js"></script>
+  <script src="https://unpkg.com/ionicons@5.2.1/dist/ionicons.js"></script>
 </head>
 
 <body>
-  <nav class="primary-nav">
-    <ul>
-      <li> <a href="#">News</a></li>
-      <li> <a href="#">Events</a></li>
-      <li> <a href="#">Business</a></li>
-      <li> <a href="#">AMAs</a></li>
-      <li> <a href="#">Spaces</a></li>
-      <li> <a href="#">Terms & conditions</a></li>
-      <div>
-        <li> <a href="#">About</a></li>
-        <li> <a href="#">Advertise</a></li>
-        <li> <a href="#">Jobs</a></li>
-        <li> <a href="#">Contact</a></li>
-      </div>
-    </ul>
-  </nav>
-  <div class="sticky-nav">
-    <ul>
-      <li><a href="#">LATEST</a></li>
-      <li><a href="#">HARD FORK</a></li>
-      <li><a href="#">PLUGGED</a></li>
-      <li><a href="#">README</a></li>
-      <li><a href="#">GROWTH QUARTERS</a></li>
-      <li><a href="#">SHIFT</a></li>
-      <li><a href="#">NEURAL</a></li>
-      <div>
-        <li><i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i></li>
-      </div>
-    </ul>
-  </div>
-  <section class="grid-main-section">
-    <article class="header-article">
-      <header>
-        <a href="#">WORLD</a>
-        <h1><a href="#"> What audience intelligence data tells us about the 2020 US presidential election</a></h1>
-        <p>by <a href="#">Andrea Hak </a><i class="fa fa-clock-o" aria-hidden="true"></i> 7 hours ago <i class="fa fa-share-alt" aria-hidden="true"></i> 4 </p>
-      </header>
-    </article>
-    <div class="inline-grid">
-      <article class="height-article">
-        <h1><a href="#">Google wants to help you find the nearest US voting location</a></h1>
-      </article>
-      <article class="height-article">
-        <a href="#">APPS</a>
-        <h1><a href="#">Google wants to help you find the nearest US voting location</a></h1>
-        <p>by <a href="#">Mix </a><i class="fa fa-clock-o" aria-hidden="true"></i> 7 hours ago <i class="fa fa-share-alt" aria-hidden="true"></i> 4 </p>
-      </article>
-    </div>
-  </section>
-  <div class="wrapper">
-    <section class="latest-news-section">
-      <h2><a href="#">Latest news</a></h2>
+  <div>
+    <a href="#"><img src="assets/logo.svg" alt="logo" class="nav-logo"></a>
+    <nav class="primary-nav">
       <ul>
-        <li>
-          <div> <img src="assets/thumbnail.png" alt="thumbnail-icon">
-            <h4></h4>
-            <p>Daniel bourke - 13 hours ago</p>
-          </div>
-        </li>
-        <li>
-          <div> <img src="assets/thumbnail.png" alt="thumbnail-icon">
-            <h4></h4>
-            <p>Daniel bourke - 13 hours ago</p>
-          </div>
-        </li>
-        <li>
-          <div> <img src="assets/thumbnail.png" alt="thumbnail-icon">
-            <h4></h4>
-            <p>Daniel bourke - 13 hours ago</p>
-          </div>
-        </li>
-        <li>
-          <div> <img src="assets/thumbnail.png" alt="thumbnail-icon">
-            <h4></h4>
-            <p>Daniel bourke - 13 hours ago</p>
-          </div>
-        </li>
-        <li>
-          <div> <img src="assets/thumbnail.png" alt="thumbnail-icon">
-            <h4></h4>
-            <p>Daniel bourke - 13 hours ago</p>
-          </div>
-        </li>
-        <li>
-          <div> <img src="assets/thumbnail.png" alt="thumbnail-icon">
-            <h4></h4>
-            <p>Daniel bourke - 13 hours ago</p>
-          </div>
-        </li>
-        <li>
-          <div> <img src="assets/thumbnail.png" alt="thumbnail-icon">
-            <h4></h4>
-            <p>Daniel bourke - 13 hours ago</p>
-          </div>
-        </li>
-        <li>
-          <div> <img src="assets/thumbnail.png" alt="thumbnail-icon">
-            <h4></h4>
-            <p>Daniel bourke - 13 hours ago</p>
-          </div>
-        </li>
+        <li> <a href="#" class="highlight">News</a></li>
+        <li> <a href="#">Events <span>&#8227;</span></a></li>
+        <li> <a href="#">Business <span>&#8227;</span></a></li>
+        <li> <a href="#">AMAs</a></li>
+        <li> <a href="#">Spaces</a></li>
+        <li> <a href="#">Terms & conditions</a></li>
+        <div>
+          <li> <a href="#">About</a></li>
+          <li> <a href="#">Advertise</a></li>
+          <li> <a href="#">Jobs</a></li>
+          <li> <a href="#">Contact</a></li>
+        </div>
       </ul>
-    </section>
-    <section>
-      <div class="index-co">
-        <h2 class="inline "> <a href="#"> Latest funding rounds on Index.co </a></h2>
-        <a href="#" class="float-link inline ">See more</a>
-        <a href="#" class="float-link inline">Get updates by email |</a>
-        <a href="#" class="float-link inline">Add info | </a>
-      </div>
-      <div class="flex">
-        <div class="tile">
-          <img src="assets/thumbnail.png" alt="">
-          <h4>Title</h4>
-          <h4>$12M</h4>
-          <h5>Series A</h5>
-          <a href="#">Automotive1</a>
-          <a href="#">MS&AD Ventures</a>
-          <hr>
-          <a href="#">Lorep ipsum bla bla bla bla</a>
-        </div>
-        <div class="tile">
-          <img src="assets/thumbnail.png" alt="thumbnail-icon">
-          <h4>Title</h4>
-          <h4>$12M</h4>
-          <h5>Series A</h5>
-          <a href="#">Automotive1</a>
-          <a href="#">MS&AD Ventures</a>
-          <hr>
-          <a href="#">Lorep ipsum bla bla bla bla</a>
-        </div>
-        <div class="tile">
-          <img src="assets/thumbnail.png" alt="thumbnail-icon">
-          <h4>Title</h4>
-          <h4>$12M</h4>
-          <h5>Series A</h5>
-          <a href="#">Automotive1</a>
-          <a href="#">MS&AD Ventures</a>
-          <hr>
-          <a href="#">Lorep ipsum bla bla bla bla</a>
-        </div>
-        <div class="tile">
-          <img src="assets/thumbnail.png" alt="thumbnail-icon">
-          <h4>Title</h4>
-          <h4>$12M</h4>
-          <h5>Series A</h5>
-          <a href="#">Automotive1</a>
-          <a href="#">MS&AD Ventures</a>
-          <hr>
-          <a href="#">Lorep ipsum bla bla bla bla</a>
-        </div>
-      </div>
-    </section>
-    <div class="flex">
-      <section class="post">
-        <h2>Title</h2>
-        <div class="post-bg">
-          <h5>MOST POPULAR</h5>
-          <h4>Main Title</h4>
-          <p>Daniel bourke - 5 days ago</p>
-        </div>
-        <div class="latest-post">
-          <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-          <h6>LATEST</h6>
-          <h5>Latest title</h5>
-        </div>
-        <ul>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-        </ul>
-      </section>
-      <section class="post">
-        <h2>Title</h2>
-        <div class="post-bg">
-          <h5>MOST POPULAR</h5>
-          <h4>Main Title</h4>
-          <p>Daniel bourke - 5 days ago</p>
-        </div>
-        <div class="latest-post">
-          <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-          <h6>LATEST</h6>
-          <h5>Latest title</h5>
-        </div>
-        <ul>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-        </ul>
-      </section>
-      <section class="post">
-        <h2>Title</h2>
-        <div class="post-bg">
-          <h5>MOST POPULAR</h5>
-          <h4>Main Title</h4>
-          <p>Daniel bourke - 5 days ago</p>
-        </div>
-        <div class="latest-post">
-          <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-          <h6>LATEST</h6>
-          <h5>Latest title</h5>
-        </div>
-        <ul>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-        </ul>
-      </section>
-    </div>
-    <div class="flex">
-      <section class="post">
-        <h2>Title</h2>
-        <div class="post-bg">
-          <h5>MOST POPULAR</h5>
-          <h4>Main Title</h4>
-          <p>Daniel bourke - 5 days ago</p>
-        </div>
-        <div class="latest-post">
-          <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-          <h6>LATEST</h6>
-          <h5>Latest title</h5>
-        </div>
-        <ul>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-        </ul>
-      </section>
-      <section class="post">
-        <h2>Title</h2>
-        <div class="post-bg">
-          <h5>MOST POPULAR</h5>
-          <h4>Main Title</h4>
-          <p>Daniel bourke - 5 days ago</p>
-        </div>
-        <div class="latest-post">
-          <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-          <h6>LATEST</h6>
-          <h5>Latest title</h5>
-        </div>
-        <ul>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-        </ul>
-      </section>
-      <section class="post">
-        <h2>Title</h2>
-        <div class="post-bg">
-          <h5>MOST POPULAR</h5>
-          <h4>Main Title</h4>
-          <p>Daniel bourke - 5 days ago</p>
-        </div>
-        <div class="latest-post">
-          <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-          <h6>LATEST</h6>
-          <h5>Latest title</h5>
-        </div>
-        <ul>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-        </ul>
-      </section>
-    </div>
-    <div class="flex">
-      <section class="post">
-        <h2>Title</h2>
-        <div class="post-bg">
-          <h5>MOST POPULAR</h5>
-          <h4>Main Title</h4>
-          <p>Daniel bourke - 5 days ago</p>
-        </div>
-        <div class="latest-post">
-          <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-          <h6>LATEST</h6>
-          <h5>Latest title</h5>
-        </div>
-        <ul>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-        </ul>
-      </section>
-      <section class="post">
-        <h2>Title</h2>
-        <div class="post-bg">
-          <h5>MOST POPULAR</h5>
-          <h4>Main Title</h4>
-          <p>Daniel bourke - 5 days ago</p>
-        </div>
-        <div class="latest-post">
-          <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-          <h6>LATEST</h6>
-          <h5>Latest title</h5>
-        </div>
-        <ul>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-        </ul>
-      </section>
-      <section class="post">
-        <h2>Title</h2>
-        <div class="post-bg">
-          <h5>MOST POPULAR</h5>
-          <h4>Main Title</h4>
-          <p>Daniel bourke - 5 days ago</p>
-        </div>
-        <div class="latest-post">
-          <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-          <h6>LATEST</h6>
-          <h5>Latest title</h5>
-        </div>
-        <ul>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-          <li> <a href="#">Lorem ipsum...</a> </li>
-          <hr>
-        </ul>
-      </section>
-    </div>
-    <div>
+    </nav>
+    <div class="sticky-nav flex">
+      <ul>
+        <li><a href="#">LATEST</a></li>
+        <li><a href="#">HARD FORK</a></li>
+        <li><a href="#">PLUGGED</a></li>
+        <li><a href="#">README</a></li>
+        <li><a href="#">GROWTH QUARTERS</a></li>
+        <li><a href="#">SHIFT</a></li>
+        <li><a href="#">NEURAL</a></li>
+      </ul>
       <div>
-      <a href="#">Latest deals</a>
-      <a href="#" class="float-link">See all Deals</a>
-      </div>
-      <div class="flex">
-        <article class="latest-deals">
-          <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-          <h3>Lorem ipsum...</h3>
-          <p class="inline line-through">$1292</p>
-          <p class="inline">$1292</p>
-        </article>
-        <article class="latest-deals">
-          <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-          <h3>Lorem ipsum...</h3>
-          <p class="inline line-through">$1292</p>
-          <p class="inline">$1292</p>
-        </article>
-        <article class="latest-deals">
-          <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-          <h3>Lorem ipsum...</h3>
-          <p class="inline line-through">$1292</p>
-          <p class="inline">$1292</p>
-        </article>
-        <article class="latest-deals">
-          <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-          <h3>Lorem ipsum...</h3>
-          <p class="inline line-through">$1292</p>
-          <p class="inline">$1292</p>
-        </article>
-      </div>
-      <div class="flex">
-        <article class="latest-deals">
-          <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-          <h3>Lorem ipsum...</h3>
-          <p class="inline line-through">$1292</p>
-          <p class="inline">$1292</p>
-        </article>
-        <article class="latest-deals">
-          <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-          <h3>Lorem ipsum...</h3>
-          <p class="inline line-through">$1292</p>
-          <p class="inline">$1292</p>
-        </article>
-        <article class="latest-deals">
-          <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-          <h3>Lorem ipsum...</h3>
-          <p class="inline line-through">$1292</p>
-          <p class="inline">$1292</p>
-        </article>
-        <article class="latest-deals">
-          <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-          <h3>Lorem ipsum...</h3>
-          <p class="inline line-through">$1292</p>
-          <p class="inline">$1292</p>
-        </article>
+        <a href="#"><i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i></a>
       </div>
     </div>
   </div>
+  <main>
+    <div class="grid-main-section">
+      <article class="first-article">
+        <img src="assets/logo.svg" alt="tnw-logo">
+        <p class="time"> Wednesday - October 21, 2020</p>
+      </article>
+      <article class="second-article">
+      </article>
+      <article class="third-article">
+      </article>
+
+    </div>
+    <div class="wrapper">
+      <h2><a href="#">Latest news</a></h2>
+      <section class="latest-news-section">
+        <div class="ln1"> <img src="assets/img/galaxy.png" alt="thumbnail-icon">
+          <h4>Lorem ipsum</h4>
+          <p>Daniel bourke - 13 hours ago</p>
+        </div>
+        <div class="ln2"> <img src="assets/img/desktop.jpeg" alt="thumbnail-icon">
+          <h4>Lorem ipsum</h4>
+          <p>Daniel bourke - 13 hours ago</p>
+        </div>
+        <div class="ln3"> <img src="assets/img/hummer.jpg" alt="thumbnail-icon">
+          <h4>Lorem ipsum</h4>
+          <p>Daniel bourke - 13 hours ago</p>
+        </div>
+        <div class="ln4"> <img src="assets/img/nurse.jpg" alt="thumbnail-icon">
+          <h4>Lorem ipsum</h4>
+          <p>Daniel bourke - 13 hours ago</p>
+        </div>
+        <div class="ln5"> <img src="assets/img/minicars.png" alt="thumbnail-icon">
+          <h4>Lorem ipsum</h4>
+          <p>Daniel bourke - 13 hours ago</p>
+        </div>
+        <div class="ln6"> <img src="assets/img/gmail.png" alt="thumbnail-icon">
+          <h4>Lorem ipsum</h4>
+          <p>Daniel bourke - 13 hours ago</p>
+        </div>
+        <div class="ln7"> <img src="assets/img/suncoin.jpg" alt="thumbnail-icon">
+          <h4>Lorem ipsum</h4>
+          <p>Daniel bourke - 13 hours ago</p>
+        </div>
+        <div class="ln8"> <img src="assets/img/pc.png" alt="thumbnail-icon">
+          <h4>Lorem ipsum</h4>
+          <p>Daniel bourke - 13 hours ago</p>
+        </div>
+      </section>
+      <section class="latest-funding-rounds">
+        <header class="index-co">
+          <h2 class="inline "> <a href="#"> Latest funding rounds on Index.co </a></h2>
+          <a href="#" class="float-link inline ">See more</a>
+          <a href="#" class="float-link inline">Get updates by email |</a>
+          <a href="#" class="float-link inline">Add info | </a>
+        </header>
+        <div class="tile1">
+          <a href="#" class="relative">
+            <img src="assets/img/tiles-img.png" alt="thumbnail-icon">
+            <h4 class="tile-title">Lorem ipsum</h4>
+            <div class="tile-subtitle">
+              <h4>€2.6M</h4>
+              <h5>Lorem ipsum</h5>
+            </div>
+          </a>
+          <div class="tile-icons">
+            <a href="#">
+              <i class="fa fa-tag icon" aria-hidden="true"></i>
+              <span>Lorem ipsum</span>
+            </a>
+            <a href="#">
+              <i class="fa fa-briefcase icon" aria-hidden="true"></i>
+              <span>Lorem ipsum</span>
+            </a>
+          </div>
+              <a href="#"> Lorem ipsum</a>
+        </div>
+        <div class="tile2">
+          <a href="#" class="relative">
+            <img src="assets/img/tiles-img.png" alt="thumbnail-icon">
+            <h4 class="tile-title">Lorem ipsum</h4>
+            <div class="tile-subtitle">
+              <h4>€2.6M</h4>
+              <h5>Lorem ipsum</h5>
+            </div>
+          </a>
+          <div class="tile-icons">
+            <a href="#">
+              <i class="fa fa-tag icon" aria-hidden="true"></i>
+              <span>Lorem ipsum</span>
+            </a>
+            <a href="#">
+              <i class="fa fa-briefcase icon" aria-hidden="true"></i>
+              <span>Lorem ipsum</span>
+            </a>
+          </div>
+              <a href="#"> Lorem ipsum</a>
+        </div>
+        <div class="tile3">
+          <a href="#" class="relative">
+            <img src="assets/img/tiles-img.png" alt="thumbnail-icon">
+            <h4 class="tile-title">Lorem ipsum</h4>
+            <div class="tile-subtitle">
+              <h4>€2.6M</h4>
+              <h5>Lorem ipsum</h5>
+            </div>
+          </a>
+          <div class="tile-icons">
+            <a href="#">
+              <i class="fa fa-tag icon" aria-hidden="true"></i>
+              <span>Lorem ipsum</span>
+            </a>
+            <a href="#">
+              <i class="fa fa-briefcase icon" aria-hidden="true"></i>
+              <span>Lorem ipsum</span>
+            </a>
+          </div>
+              <a href="#"> Lorem ipsum</a>
+        </div>
+        <div class="tile4">
+          <a href="#" class="relative">
+            <img src="assets/img/tiles-img.png" alt="thumbnail-icon">
+            <h4 class="tile-title">Lorem ipsum</h4>
+            <div class="tile-subtitle">
+              <h4>€2.6M</h4>
+              <h5>Lorem ipsum</h5>
+            </div>
+          </a>
+          <div class="tile-icons">
+            <a href="#">
+              <i class="fa fa-tag icon" aria-hidden="true"></i>
+              <span>Lorem ipsum</span>
+            </a>
+            <a href="#">
+              <i class="fa fa-briefcase icon" aria-hidden="true"></i>
+              <span>Lorem ipsum</span>
+            </a>
+          </div>
+              <aref="#"> Lorem ipsum</a>
+        </div>
+      </section>
+      <div class="flex">
+        <section class="post">
+          <h2>Title</h2>
+          <div class="post-bg">
+            <h5>MOST POPULAR</h5>
+            <h4>Main Title</h4>
+            <p>Daniel bourke - 5 days ago</p>
+          </div>
+          <div class="latest-post">
+            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <h6>LATEST</h6>
+            <h5>Latest title</h5>
+          </div>
+          <ul>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+          </ul>
+        </section>
+        <section class="post">
+          <h2>Title</h2>
+          <div class="post-bg">
+            <h5>MOST POPULAR</h5>
+            <h4>Main Title</h4>
+            <p>Daniel bourke - 5 days ago</p>
+          </div>
+          <div class="latest-post">
+            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <h6>LATEST</h6>
+            <h5>Latest title</h5>
+          </div>
+          <ul>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+          </ul>
+        </section>
+        <section class="post">
+          <h2>Title</h2>
+          <div class="post-bg">
+            <h5>MOST POPULAR</h5>
+            <h4>Main Title</h4>
+            <p>Daniel bourke - 5 days ago</p>
+          </div>
+          <div class="latest-post">
+            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <h6>LATEST</h6>
+            <h5>Latest title</h5>
+          </div>
+          <ul>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+          </ul>
+        </section>
+      </div>
+      <div class="flex">
+        <section class="post">
+          <h2>Title</h2>
+          <div class="post-bg">
+            <h5>MOST POPULAR</h5>
+            <h4>Main Title</h4>
+            <p>Daniel bourke - 5 days ago</p>
+          </div>
+          <div class="latest-post">
+            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <h6>LATEST</h6>
+            <h5>Latest title</h5>
+          </div>
+          <ul>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+          </ul>
+        </section>
+        <section class="post">
+          <h2>Title</h2>
+          <div class="post-bg">
+            <h5>MOST POPULAR</h5>
+            <h4>Main Title</h4>
+            <p>Daniel bourke - 5 days ago</p>
+          </div>
+          <div class="latest-post">
+            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <h6>LATEST</h6>
+            <h5>Latest title</h5>
+          </div>
+          <ul>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+          </ul>
+        </section>
+        <section class="post">
+          <h2>Title</h2>
+          <div class="post-bg">
+            <h5>MOST POPULAR</h5>
+            <h4>Main Title</h4>
+            <p>Daniel bourke - 5 days ago</p>
+          </div>
+          <div class="latest-post">
+            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <h6>LATEST</h6>
+            <h5>Latest title</h5>
+          </div>
+          <ul>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+          </ul>
+        </section>
+      </div>
+      <div class="flex">
+        <section class="post">
+          <h2>Title</h2>
+          <div class="post-bg">
+            <h5>MOST POPULAR</h5>
+            <h4>Main Title</h4>
+            <p>Daniel bourke - 5 days ago</p>
+          </div>
+          <div class="latest-post">
+            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <h6>LATEST</h6>
+            <h5>Latest title</h5>
+          </div>
+          <ul>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+          </ul>
+        </section>
+        <section class="post">
+          <h2>Title</h2>
+          <div class="post-bg">
+            <h5>MOST POPULAR</h5>
+            <h4>Main Title</h4>
+            <p>Daniel bourke - 5 days ago</p>
+          </div>
+          <div class="latest-post">
+            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <h6>LATEST</h6>
+            <h5>Latest title</h5>
+          </div>
+          <ul>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+          </ul>
+        </section>
+        <section class="post">
+          <h2>Title</h2>
+          <div class="post-bg">
+            <h5>MOST POPULAR</h5>
+            <h4>Main Title</h4>
+            <p>Daniel bourke - 5 days ago</p>
+          </div>
+          <div class="latest-post">
+            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <h6>LATEST</h6>
+            <h5>Latest title</h5>
+          </div>
+          <ul>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+            <li> <a href="#">Lorem ipsum...</a> </li>
+            <hr>
+          </ul>
+        </section>
+      </div>
+      <div>
+        <div>
+          <a href="#">Latest deals</a>
+          <a href="#" class="float-link">See all Deals</a>
+        </div>
+        <div class="flex">
+          <article class="latest-deals">
+            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <h3>Lorem ipsum...</h3>
+            <p class="inline line-through">$1292</p>
+            <p class="inline">$1292</p>
+          </article>
+          <article class="latest-deals">
+            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <h3>Lorem ipsum...</h3>
+            <p class="inline line-through">$1292</p>
+            <p class="inline">$1292</p>
+          </article>
+          <article class="latest-deals">
+            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <h3>Lorem ipsum...</h3>
+            <p class="inline line-through">$1292</p>
+            <p class="inline">$1292</p>
+          </article>
+          <article class="latest-deals">
+            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <h3>Lorem ipsum...</h3>
+            <p class="inline line-through">$1292</p>
+            <p class="inline">$1292</p>
+          </article>
+        </div>
+        <div class="flex">
+          <article class="latest-deals">
+            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <h3>Lorem ipsum...</h3>
+            <p class="inline line-through">$1292</p>
+            <p class="inline">$1292</p>
+          </article>
+          <article class="latest-deals">
+            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <h3>Lorem ipsum...</h3>
+            <p class="inline line-through">$1292</p>
+            <p class="inline">$1292</p>
+          </article>
+          <article class="latest-deals">
+            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <h3>Lorem ipsum...</h3>
+            <p class="inline line-through">$1292</p>
+            <p class="inline">$1292</p>
+          </article>
+          <article class="latest-deals">
+            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <h3>Lorem ipsum...</h3>
+            <p class="inline line-through">$1292</p>
+            <p class="inline">$1292</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
   <footer>
-<div class="bg-footer flex footer-fa-icons">
-  <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-  <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-  <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-  <a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
-  <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-</div>
-<div class="bg-footer quick-links">
- <a href="#">EVENTS</a>
- <a href="#">ABOUT</a>
- <a href="#">ADVERTISE</a>
- <a href="#">JOBS</a>
- <a href="#">CONTACT</a>
-</div>
-<div class="bg-footer color">
-  The Next Web © 2006–2020 The Next Web B.V. Made with  in Amsterdam. Powered by StackPath
-</div>
+    <div class="bg-footer flex footer-fa-icons">
+      <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    </div>
+    <div class="bg-footer quick-links">
+      <a href="#">EVENTS</a>
+      <a href="#">ABOUT</a>
+      <a href="#">ADVERTISE</a>
+      <a href="#">JOBS</a>
+      <a href="#">CONTACT</a>
+    </div>
+    <div class="bg-footer color">
+      The Next Web © 2006–2020 The Next Web B.V. Made with in Amsterdam. Powered by StackPath
+    </div>
   </footer>
 </body>
+
 </html>
