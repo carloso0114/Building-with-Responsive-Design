@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TNW</title>
   <link rel="stylesheet" media="screen and (min-width: 1024px)" href="style.css">
-  <link rel="stylesheet" media="screen and (max-width: 1023px)" href="tablet.css">
-  <link rel="stylesheet" media="screen and (max-width: 767px)" href="phone.css">
+  <!--<link rel="stylesheet" media="screen and (max-width: 1023px)" href="tablet.css">
+  <link rel="stylesheet" media="screen and (max-width: 767px)" href="phone.css">-->
   <script src="https://use.fontawesome.com/6a167e652a.js"></script>
   <script src="https://unpkg.com/ionicons@5.2.1/dist/ionicons.js"></script>
 </head>
@@ -15,7 +15,7 @@
 <body>
   <div>
     <a href="#"><img src="assets/logo.svg" alt="logo" class="nav-logo"></a>
-    <nav class="primary-nav">
+    <nav class="primary-nav flex">
       <ul>
         <li> <a href="#" class="highlight">News</a></li>
         <li> <a href="#">Events <span>&#8227;</span></a></li>
@@ -23,13 +23,15 @@
         <li> <a href="#">AMAs</a></li>
         <li> <a href="#">Spaces</a></li>
         <li> <a href="#">Terms & conditions</a></li>
-        <div>
+      </ul>
+      <div class="right">
+        <ul>
           <li> <a href="#">About</a></li>
           <li> <a href="#">Advertise</a></li>
           <li> <a href="#">Jobs</a></li>
           <li> <a href="#">Contact</a></li>
-        </div>
-      </ul>
+        </ul>
+      </div>
     </nav>
     <div class="sticky-nav flex">
       <ul>
@@ -49,12 +51,14 @@
   <main>
     <div class="grid-main-section">
       <article class="first-article">
-        <img src="assets/logo.svg" alt="tnw-logo">
+        <h2><img src="assets/logo.svg" alt="tnw-logo"></h2>
         <p class="time"> Wednesday - October 21, 2020</p>
       </article>
       <article class="second-article">
+        <h2>Lorem ipsum</h2>
       </article>
       <article class="third-article">
+        <h2>Lorem ipsum</h2>
       </article>
 
     </div>
@@ -110,7 +114,7 @@
               <h5>Lorem ipsum</h5>
             </div>
           </a>
-          <div class="tile-icons">
+          <div class="tile-icons tile-background">
             <a href="#">
               <i class="fa fa-tag icon" aria-hidden="true"></i>
               <span>Lorem ipsum</span>
@@ -120,7 +124,9 @@
               <span>Lorem ipsum</span>
             </a>
           </div>
-              <a href="#"> Lorem ipsum</a>
+          <div class="tile-background">
+            <a href="#"> Lorem ipsum</a>
+          </div>
         </div>
         <div class="tile2">
           <a href="#" class="relative">
@@ -131,7 +137,7 @@
               <h5>Lorem ipsum</h5>
             </div>
           </a>
-          <div class="tile-icons">
+          <div class="tile-icons tile-background">
             <a href="#">
               <i class="fa fa-tag icon" aria-hidden="true"></i>
               <span>Lorem ipsum</span>
@@ -141,7 +147,9 @@
               <span>Lorem ipsum</span>
             </a>
           </div>
-              <a href="#"> Lorem ipsum</a>
+          <div class="tile-background">
+            <a href="#"> Lorem ipsum</a>
+          </div>
         </div>
         <div class="tile3">
           <a href="#" class="relative">
@@ -152,7 +160,7 @@
               <h5>Lorem ipsum</h5>
             </div>
           </a>
-          <div class="tile-icons">
+          <div class="tile-icons tile-background">
             <a href="#">
               <i class="fa fa-tag icon" aria-hidden="true"></i>
               <span>Lorem ipsum</span>
@@ -162,7 +170,9 @@
               <span>Lorem ipsum</span>
             </a>
           </div>
-              <a href="#"> Lorem ipsum</a>
+          <div class="tile-background">
+            <a href="#"> Lorem ipsum</a>
+          </div>
         </div>
         <div class="tile4">
           <a href="#" class="relative">
@@ -173,7 +183,7 @@
               <h5>Lorem ipsum</h5>
             </div>
           </a>
-          <div class="tile-icons">
+          <div class="tile-icons tile-background">
             <a href="#">
               <i class="fa fa-tag icon" aria-hidden="true"></i>
               <span>Lorem ipsum</span>
@@ -183,266 +193,259 @@
               <span>Lorem ipsum</span>
             </a>
           </div>
-              <aref="#"> Lorem ipsum</a>
+          <div class="tile-background">
+            <a href="#"> Lorem ipsum</a>
+          </div>
         </div>
       </section>
       <div class="flex">
         <section class="post">
-          <h2>Title</h2>
+          <h2>Lorem ipsum</h2>
           <div class="post-bg">
-            <h5>MOST POPULAR</h5>
-            <h4>Main Title</h4>
-            <p>Daniel bourke - 5 days ago</p>
+            <div>
+              <h5>MOST POPULAR</h5>
+              <h4>Main Title</h4>
+              <p>Daniel bourke - 5 days ago</p>
+            </div>
           </div>
           <div class="latest-post">
-            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-            <h6>LATEST</h6>
-            <h5>Latest title</h5>
+            <img src="assets/img/bitcoin-thief.jpg" alt="mini-pig-pic">
+            <div>
+              <h6>LATEST</h6>
+              <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            </div>
           </div>
-          <ul>
+          <ul class="lp-list">
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
           </ul>
         </section>
         <section class="post">
-          <h2>Title</h2>
+          <h2>Lorem ipsum</h2>
           <div class="post-bg">
-            <h5>MOST POPULAR</h5>
-            <h4>Main Title</h4>
-            <p>Daniel bourke - 5 days ago</p>
+            <div>
+              <h5>MOST POPULAR</h5>
+              <h4>Main Title</h4>
+              <p>Daniel bourke - 5 days ago</p>
+            </div>
           </div>
           <div class="latest-post">
-            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-            <h6>LATEST</h6>
-            <h5>Latest title</h5>
+            <img src="assets/img/bitcoin-thief.jpg" alt="mini-pig-pic">
+            <div>
+              <h6>LATEST</h6>
+              <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            </div>
           </div>
-          <ul>
+          <ul class="lp-list">
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
           </ul>
         </section>
         <section class="post">
-          <h2>Title</h2>
+          <h2>Lorem ipsum</h2>
           <div class="post-bg">
-            <h5>MOST POPULAR</h5>
-            <h4>Main Title</h4>
-            <p>Daniel bourke - 5 days ago</p>
+            <div>
+              <h5>MOST POPULAR</h5>
+              <h4>Main Title</h4>
+              <p>Daniel bourke - 5 days ago</p>
+            </div>
           </div>
           <div class="latest-post">
-            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-            <h6>LATEST</h6>
-            <h5>Latest title</h5>
+            <img src="assets/img/bitcoin-thief.jpg" alt="mini-pig-pic">
+            <div>
+              <h6>LATEST</h6>
+              <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            </div>
           </div>
-          <ul>
+          <ul class="lp-list">
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
           </ul>
         </section>
       </div>
       <div class="flex">
         <section class="post">
-          <h2>Title</h2>
+          <h2>Lorem ipsum</h2>
           <div class="post-bg">
-            <h5>MOST POPULAR</h5>
-            <h4>Main Title</h4>
-            <p>Daniel bourke - 5 days ago</p>
+            <div>
+              <h5>MOST POPULAR</h5>
+              <h4>Main Title</h4>
+              <p>Daniel bourke - 5 days ago</p>
+            </div>
           </div>
           <div class="latest-post">
-            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-            <h6>LATEST</h6>
-            <h5>Latest title</h5>
+            <img src="assets/img/bitcoin-thief.jpg" alt="mini-pig-pic">
+            <div>
+              <h6>LATEST</h6>
+              <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            </div>
           </div>
-          <ul>
+          <ul class="lp-list">
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
           </ul>
         </section>
         <section class="post">
-          <h2>Title</h2>
+          <h2>Lorem ipsum</h2>
           <div class="post-bg">
-            <h5>MOST POPULAR</h5>
-            <h4>Main Title</h4>
-            <p>Daniel bourke - 5 days ago</p>
+            <div>
+              <h5>MOST POPULAR</h5>
+              <h4>Main Title</h4>
+              <p>Daniel bourke - 5 days ago</p>
+            </div>
           </div>
           <div class="latest-post">
-            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-            <h6>LATEST</h6>
-            <h5>Latest title</h5>
+            <img src="assets/img/bitcoin-thief.jpg" alt="mini-pig-pic">
+            <div>
+              <h6>LATEST</h6>
+              <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            </div>
           </div>
-          <ul>
+          <ul class="lp-list">
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
           </ul>
         </section>
         <section class="post">
-          <h2>Title</h2>
+          <h2>Lorem ipsum</h2>
           <div class="post-bg">
-            <h5>MOST POPULAR</h5>
-            <h4>Main Title</h4>
-            <p>Daniel bourke - 5 days ago</p>
+            <div>
+              <h5>MOST POPULAR</h5>
+              <h4>Main Title</h4>
+              <p>Daniel bourke - 5 days ago</p>
+            </div>
           </div>
           <div class="latest-post">
-            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-            <h6>LATEST</h6>
-            <h5>Latest title</h5>
+            <img src="assets/img/bitcoin-thief.jpg" alt="mini-pig-pic">
+            <div>
+              <h6>LATEST</h6>
+              <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            </div>
           </div>
-          <ul>
+          <ul class="lp-list">
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
           </ul>
         </section>
       </div>
       <div class="flex">
         <section class="post">
-          <h2>Title</h2>
+          <h2>Lorem ipsum</h2>
           <div class="post-bg">
-            <h5>MOST POPULAR</h5>
-            <h4>Main Title</h4>
-            <p>Daniel bourke - 5 days ago</p>
+            <div>
+              <h5>MOST POPULAR</h5>
+              <h4>Main Title</h4>
+              <p>Daniel bourke - 5 days ago</p>
+            </div>
           </div>
           <div class="latest-post">
-            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-            <h6>LATEST</h6>
-            <h5>Latest title</h5>
+            <img src="assets/img/bitcoin-thief.jpg" alt="mini-pig-pic">
+            <div>
+              <h6>LATEST</h6>
+              <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            </div>
           </div>
-          <ul>
+          <ul class="lp-list">
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
           </ul>
         </section>
         <section class="post">
-          <h2>Title</h2>
+          <h2>Lorem ipsum</h2>
           <div class="post-bg">
-            <h5>MOST POPULAR</h5>
-            <h4>Main Title</h4>
-            <p>Daniel bourke - 5 days ago</p>
+            <div>
+              <h5>MOST POPULAR</h5>
+              <h4>Main Title</h4>
+              <p>Daniel bourke - 5 days ago</p>
+            </div>
           </div>
           <div class="latest-post">
-            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-            <h6>LATEST</h6>
-            <h5>Latest title</h5>
+            <img src="assets/img/bitcoin-thief.jpg" alt="mini-pig-pic">
+            <div>
+              <h6>LATEST</h6>
+              <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            </div>
           </div>
-          <ul>
+          <ul class="lp-list">
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
           </ul>
         </section>
         <section class="post">
-          <h2>Title</h2>
+          <h2>Lorem ipsum</h2>
           <div class="post-bg">
-            <h5>MOST POPULAR</h5>
-            <h4>Main Title</h4>
-            <p>Daniel bourke - 5 days ago</p>
+            <div>
+              <h5>MOST POPULAR</h5>
+              <h4>Main Title</h4>
+              <p>Daniel bourke - 5 days ago</p>
+            </div>
           </div>
           <div class="latest-post">
-            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
-            <h6>LATEST</h6>
-            <h5>Latest title</h5>
+            <img src="assets/img/bitcoin-thief.jpg" alt="mini-pig-pic">
+            <div>
+              <h6>LATEST</h6>
+              <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            </div>
           </div>
-          <ul>
+          <ul class="lp-list">
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
             <li> <a href="#">Lorem ipsum...</a> </li>
-            <hr>
           </ul>
         </section>
       </div>
-      <div>
+      <section class="latest-deals-section">
         <div>
-          <a href="#">Latest deals</a>
+          <h2 class="inline"><a href="#">Latest deals</a></h2>
           <a href="#" class="float-link">See all Deals</a>
         </div>
         <div class="flex">
           <article class="latest-deals">
-            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <img src="assets/img/course.jpg" alt="mini-pig-pic">
             <h3>Lorem ipsum...</h3>
             <p class="inline line-through">$1292</p>
             <p class="inline">$1292</p>
           </article>
           <article class="latest-deals">
-            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <img src="assets/img/course.jpg" alt="mini-pig-pic">
             <h3>Lorem ipsum...</h3>
             <p class="inline line-through">$1292</p>
             <p class="inline">$1292</p>
           </article>
           <article class="latest-deals">
-            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <img src="assets/img/course.jpg" alt="mini-pig-pic">
             <h3>Lorem ipsum...</h3>
             <p class="inline line-through">$1292</p>
             <p class="inline">$1292</p>
           </article>
           <article class="latest-deals">
-            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <img src="assets/img/course.jpg" alt="mini-pig-pic">
             <h3>Lorem ipsum...</h3>
             <p class="inline line-through">$1292</p>
             <p class="inline">$1292</p>
@@ -450,31 +453,31 @@
         </div>
         <div class="flex">
           <article class="latest-deals">
-            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <img src="assets/img/course.jpg" alt="mini-pig-pic">
             <h3>Lorem ipsum...</h3>
             <p class="inline line-through">$1292</p>
             <p class="inline">$1292</p>
           </article>
           <article class="latest-deals">
-            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <img src="assets/img/course.jpg" alt="mini-pig-pic">
             <h3>Lorem ipsum...</h3>
             <p class="inline line-through">$1292</p>
             <p class="inline">$1292</p>
           </article>
           <article class="latest-deals">
-            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <img src="assets/img/course.jpg" alt="mini-pig-pic">
             <h3>Lorem ipsum...</h3>
             <p class="inline line-through">$1292</p>
             <p class="inline">$1292</p>
           </article>
           <article class="latest-deals">
-            <img src="assets/mini-pig.jpg" alt="mini-pig-pic">
+            <img src="assets/img/course.jpg" alt="mini-pig-pic">
             <h3>Lorem ipsum...</h3>
             <p class="inline line-through">$1292</p>
             <p class="inline">$1292</p>
           </article>
         </div>
-      </div>
+      </section>
     </div>
   </main>
   <footer>

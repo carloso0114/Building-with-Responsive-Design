@@ -9,7 +9,7 @@ img {
 }
 
 main {
-  background-color: f1f1f1;
+  background-color: #f1f1f1;
 }
 
 ul {
@@ -18,6 +18,11 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+@font-face {
+  src: url(assets/fonts/Avalon_Regular.ttf);
+  font-family: Avalon-regular;
 }
 
 .nav-logo {
@@ -41,19 +46,98 @@ a {
   display: inline;
 }
 
+.sticky-nav a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.grid-main-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.tile-icons a {
+  display: block;
+  padding-left: 2em;
+  position: relative;
+  font-size: 13px;
+  color: #555;
+  margin-right: 1em;
+  line-height: 22px;
+}
+
+.latest-deals-section a {
+  font-family: Avalon-regular, sans-serif;
+  color: #f42;
+  font-size: 1.5em;
+}
+
+.footer-fa-icons a {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: #3a3a3a;
+  border-radius: 100%;
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+
+.quick-links a {
+  color: #aaa;
+  text-decoration: none;
+}
+
 .primary-nav li a {
   color: #858585;
   text-decoration: none;
 }
 
+.right {
+  margin-left: auto;
+}
+
 .highlight {
-  color: white!important;
+  color: white !important;
 }
 
 .primary-nav li a span {
   display: inline-block;
   transform: rotate(90deg);
   font-size: 0.85rem;
+}
+
+.grid-main-section h1 {
+  font-family: sans-serif;
+  font-size: 100%;
+}
+
+.second-article h1 {
+  position: relative;
+  top: 175px;
+  padding: 15px;
+  font-size: 100%;
+}
+
+.first-article header > h1 {
+  grid-area: title;
+}
+
+.first-article header > a {
+  grid-area: category;
+}
+
+.wrapper h2 a {
+  font-family: Avalon-regular, sans-serif;
+  font-weight: bolder;
+  color: #f42;
+}
+
+.footer-fa-icons a:hover {
+  text-decoration: none;
+  color: #aaa;
+  background-color: gray;
+  border-radius: 100%;
 }
 
 .primary-nav li a:hover {
@@ -76,11 +160,6 @@ a {
   display: inline;
 }
 
-.sticky-nav a {
-  color: #aaa;
-  text-decoration: none;
-}
-
 .sticky-nav div {
   margin-left: auto;
   margin-right: 20px;
@@ -101,20 +180,9 @@ a {
     "a1 a3";
 }
 
-.grid-main-section h1{
-  font-family: sans-serif;
-  font-size: 100%;
-}
-
-.grid-main-section a {
-  color: white;
-  text-decoration: none;
-}
-
 .first-article {
   grid-area: a1;
-  background-image:
-    linear-gradient(135deg, rgba(255, 4, 4, 0.61), rgba(0, 0, 0, 0.5)), linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("assets/img/bitcoin.jpg");
+  background-image: linear-gradient(135deg, rgba(255, 4, 4, 0.61), rgba(0, 0, 0, 0.5)), linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/bitcoin.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 544px;
@@ -128,14 +196,6 @@ a {
     "category"
     "title"
     "autor";
-}
-
-.first-article header>a {
-  grid-area: category;
-}
-
-.first-article header>h1 {
-  grid-area: title;
 }
 
 .first-article header p {
@@ -165,13 +225,6 @@ a {
   background-size: 100% 100%;
 }
 
-.second-article h1{
-position: relative;
-top: 175px;
-padding: 15px;
-font-size: 100%;
-}
-
 .third-article {
   grid-area: a3;
   background-image: url(assets/img/laptop.png);
@@ -180,9 +233,20 @@ font-size: 100%;
 }
 
 .wrapper {
-  margin: 0 auto;
+  margin: 25px auto 25px;
   padding: 10px;
   width: 1192px;
+}
+
+.wrapper h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.wrapper h2 a::after {
+  font-family: Avalon-regular, sans-serif;
+  color: #f42;
+  content: " >";
 }
 
 .latest-news-section {
@@ -191,7 +255,31 @@ font-size: 100%;
   grid-template-areas:
     "ln1 ln2 ln3 ln4"
     "ln5 ln6 ln7 ln8";
-    margin-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.latest-funding-rounds img {
+  width: 60px;
+  min-width: 60px;
+  max-width: 60px;
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.latest-post img {
+  width: 96px;
+  height: 96px;
+  float: right;
+}
+
+.latest-deals img {
+  height: 201px;
 }
 
 .latest-news-section div img {
@@ -238,22 +326,8 @@ font-size: 100%;
   display: grid;
   grid-gap: 15px;
   grid-template-areas:
-  "header header header header"
-  "tile1 tile2 tile3 tile4";
-}
-
-.latest-funding-rounds img{
-  width: 60px;
-  min-width: 60px;
-  max-width: 60px;
-  height: 60px;
-  min-height: 60px;
-  max-height: 60px;
-  margin: 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+    "header header header header"
+    "tile1 tile2 tile3 tile4";
 }
 
 .tile-title {
@@ -266,7 +340,7 @@ font-size: 100%;
 .tile-subtitle {
   padding: 10px 16px 10px 84px;
   color: #000;
-  background: rgba(255,68,34,.08);
+  background: rgba(255, 68, 34, 0.08);
 }
 
 .tile-subtitle h4 {
@@ -276,28 +350,23 @@ font-size: 100%;
 
 .tile-subtitle h5 {
   color: #000;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .tile-icons {
   padding: 16px;
+  border-bottom: 1px solid gray;
 }
 
-.tile-icons a {
-  display: block;
-  padding-left: 2em;
-  position: relative;
-  font-size: 13px;
-  color: #555;
-  margin-right: 1em;
-  line-height: 22px;
+.tile-background {
+  background-color: #fffaf8;
 }
 
 .icon {
   position: absolute;
-  top: .2em;
+  top: 0.2em;
   left: 0;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .index-co {
@@ -324,6 +393,10 @@ font-size: 100%;
   display: inline;
 }
 
+.block {
+  display: block;
+}
+
 .float-link {
   float: right;
 }
@@ -333,36 +406,81 @@ font-size: 100%;
 }
 
 .post {
-  background-color: coral;
-  width: 33.3%;
+  font-family: avalon-regular, sans-serif;
+  width: 100%;
   height: 100%;
-  padding: 0 10px 0px 10px;
+  margin-top: 100px;
+  padding: 11px;
+}
+
+.post h2 {
+  color: #f42;
+}
+
+.post h2::after {
+  content: " >";
 }
 
 .post-bg {
-  background-image: url(assets/mini-pig.jpg);
+  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(255, 0, 0, 0) 70.71%), url(assets/img/bitcoin-thief.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 368px;
+  width: 100%;
   height: 276px;
+  color: white;
+  position: relative;
+}
+
+.post-bg div {
+  position: absolute;
+  top: 200px;
+  padding: 10px;
+}
+
+.post-bg div h5 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 0.9em;
+}
+
+.post-bg div h4 {
+  font-weight: bold;
+}
+
+.post-bg div p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgba(228, 227, 227, 0.986);
+  font-size: 0.8em;
 }
 
 .latest-post {
-  background-color: cornflowerblue;
-  margin-top: 10px;
-  padding: 0px 0 0 20px;
+  background-color: #fff4f3;
+  margin-top: 1px;
   display: block;
   height: 96px;
+  color: #f42;
 }
 
 .latest-post h6 {
   padding-top: 10px;
 }
 
-.latest-post img {
-  width: 96px;
-  height: 96px;
-  float: right;
+.latest-post div {
+  padding: 5px 20px 5px 20px;
+}
+
+.lp-list li::before {
+  content: "\2022";
+  color: #f42;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 0.7em;
+}
+
+.lp-list li {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .line-through {
@@ -370,13 +488,21 @@ font-size: 100%;
 }
 
 .latest-deals {
-  background-color: khaki;
   padding: 14px;
 }
 
-.latest-deals img {
-  width: 270px;
-  height: 201px;
+.latest-deals-section {
+  font-family: Avalon-regular, sans-serif;
+}
+
+.latest-deals-section div a:first-child::after {
+  content: " >";
+}
+
+.latest-deals-section div a:last-child {
+  font-size: 1em;
+  padding-top: 10px;
+  margin-right: 15px;
 }
 
 .bg-footer {
@@ -390,24 +516,6 @@ font-size: 100%;
   padding: 35px 0 0 0;
 }
 
-.footer-fa-icons a {
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 10px;
-  background-color: #3a3a3a;
-  border-radius: 100%;
-  text-decoration: none;
-  color: white;
-  font-size: 1em;
-}
-
-.footer-fa-icons a:hover {
-  text-decoration: none;
-  color: #aaa;
-  background-color: gray;
-  border-radius: 100%;
-}
-
 .color {
   background-color: #000;
   color: #aaa;
@@ -418,9 +526,4 @@ font-size: 100%;
   word-spacing: 0.5em;
   font-size: 0.8em;
   padding: 25px 0 25px 0;
-}
-
-.quick-links a {
-  color: #aaa;
-  text-decoration: none;
 }
