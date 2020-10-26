@@ -25,17 +25,32 @@ a {
   font-family: Avalon-regular;
 }
 
+.display-none {
+  display: none;
+}
+
 .nav-logo {
   display: none;
+  grid-area: nav-logo;
+}
+
+.nav-logo img {
   width: 106px;
   height: 80px;
   background-color: black;
-  float: left;
   padding: 15px;
-  position: absolute;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "primary-nav"
+    "sticky-nav";
 }
 
 .primary-nav {
+  grid-area: primary-nav;
   background-color: #131313;
   padding: 7px;
   padding-left: 20px;
@@ -86,6 +101,10 @@ a {
 .quick-links a {
   color: #aaa;
   text-decoration: none;
+}
+
+.index-links a {
+  color: #f42;
 }
 
 .primary-nav li a {
@@ -149,6 +168,7 @@ a {
 }
 
 .sticky-nav {
+  grid-area: sticky-nav;
   position: sticky;
   background-color: white;
   padding-top: 15px;
@@ -235,7 +255,8 @@ a {
 .wrapper {
   margin: 25px auto 25px;
   padding: 10px;
-  width: 1192px;
+  max-width: 1192px;
+  min-width: 1024px;
 }
 
 .wrapper h2 {
@@ -489,6 +510,7 @@ a {
 
 .latest-deals {
   padding: 14px;
+  width: 25%;
 }
 
 .latest-deals-section {
@@ -526,4 +548,12 @@ a {
   word-spacing: 0.5em;
   font-size: 0.8em;
   padding: 25px 0 25px 0;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.news section {
+  width: 33.3%;
 }

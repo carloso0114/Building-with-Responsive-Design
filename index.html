@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TNW</title>
   <link rel="stylesheet" media="screen and (min-width: 1024px)" href="style.css">
-  <!--<link rel="stylesheet" media="screen and (max-width: 1023px)" href="tablet.css">
-  <link rel="stylesheet" media="screen and (max-width: 767px)" href="phone.css">-->
+  <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1023px)" href="tablet.css">
+  <link rel="stylesheet" media="screen and (max-width: 767px)" href="phone.css">
   <script src="https://use.fontawesome.com/6a167e652a.js"></script>
   <script src="https://unpkg.com/ionicons@5.2.1/dist/ionicons.js"></script>
 </head>
-
 <body>
-  <div>
-    <a href="#"><img src="assets/logo.svg" alt="logo" class="nav-logo"></a>
+  <div class="nav-grid">
+    <div class="nav-logo">
+      <a href="#"><img src="assets/logo.svg" alt="logo"></a>
+    </div>
     <nav class="primary-nav flex">
       <ul>
         <li> <a href="#" class="highlight">News</a></li>
@@ -43,15 +43,17 @@
         <li><a href="#">SHIFT</a></li>
         <li><a href="#">NEURAL</a></li>
       </ul>
-      <div>
+      <div class="icon-nav">
         <a href="#"><i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i></a>
+        <a href="#" class="display-none"><i class="fa fa-bars" aria-hidden="true"></i></a>
       </div>
     </div>
   </div>
   <main>
     <div class="grid-main-section">
       <article class="first-article">
-        <h2><img src="assets/logo.svg" alt="tnw-logo"></h2>
+        <img src="assets/logo.svg" alt="tnw-logo">
+        <h2>Lorem ipsum</h2>
         <p class="time"> Wednesday - October 21, 2020</p>
       </article>
       <article class="second-article">
@@ -60,7 +62,6 @@
       <article class="third-article">
         <h2>Lorem ipsum</h2>
       </article>
-
     </div>
     <div class="wrapper">
       <h2><a href="#">Latest news</a></h2>
@@ -101,9 +102,11 @@
       <section class="latest-funding-rounds">
         <header class="index-co">
           <h2 class="inline "> <a href="#"> Latest funding rounds on Index.co </a></h2>
-          <a href="#" class="float-link inline ">See more</a>
-          <a href="#" class="float-link inline">Get updates by email |</a>
-          <a href="#" class="float-link inline">Add info | </a>
+          <div class="index-links">
+            <a href="#" class="float-link inline ">See more</a>
+            <a href="#" class="float-link inline">Get updates by email </a>
+            <a href="#" class="float-link inline">Add info </a>
+          </div>
         </header>
         <div class="tile1">
           <a href="#" class="relative">
@@ -198,7 +201,7 @@
           </div>
         </div>
       </section>
-      <div class="flex">
+      <div class="flex wrap news">
         <section class="post">
           <h2>Lorem ipsum</h2>
           <div class="post-bg">
@@ -271,8 +274,6 @@
             <li> <a href="#">Lorem ipsum...</a> </li>
           </ul>
         </section>
-      </div>
-      <div class="flex">
         <section class="post">
           <h2>Lorem ipsum</h2>
           <div class="post-bg">
@@ -345,8 +346,6 @@
             <li> <a href="#">Lorem ipsum...</a> </li>
           </ul>
         </section>
-      </div>
-      <div class="flex">
         <section class="post">
           <h2>Lorem ipsum</h2>
           <div class="post-bg">
@@ -423,9 +422,9 @@
       <section class="latest-deals-section">
         <div>
           <h2 class="inline"><a href="#">Latest deals</a></h2>
-          <a href="#" class="float-link">See all Deals</a>
+          <a href="#" class="float">See all Deals</a>
         </div>
-        <div class="flex">
+        <div class="flex wrap ld-art">
           <article class="latest-deals">
             <img src="assets/img/course.jpg" alt="mini-pig-pic">
             <h3>Lorem ipsum...</h3>
@@ -450,8 +449,6 @@
             <p class="inline line-through">$1292</p>
             <p class="inline">$1292</p>
           </article>
-        </div>
-        <div class="flex">
           <article class="latest-deals">
             <img src="assets/img/course.jpg" alt="mini-pig-pic">
             <h3>Lorem ipsum...</h3>
