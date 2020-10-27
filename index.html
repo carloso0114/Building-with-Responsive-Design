@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,60 +10,58 @@
   <script src="https://use.fontawesome.com/6a167e652a.js"></script>
   <script src="https://unpkg.com/ionicons@5.2.1/dist/ionicons.js"></script>
 </head>
-
 <body>
-  <div class="nav-grid">
+  <nav class="nav-grid">
     <div class="nav-logo">
       <a href="#"><img src="assets/logo.svg" alt="logo"></a>
     </div>
-    <nav class="primary-nav flex">
-      <ul>
-        <li> <a href="#" class="highlight">News</a></li>
-        <li> <a href="#">Events <span>&#8227;</span></a></li>
-        <li> <a href="#">Business <span>&#8227;</span></a></li>
-        <li> <a href="#">AMAs</a></li>
-        <li> <a href="#">Spaces</a></li>
-        <li> <a href="#">Terms & conditions</a></li>
-      </ul>
-      <div class="right">
-        <ul>
-          <li> <a href="#">About</a></li>
-          <li> <a href="#">Advertise</a></li>
-          <li> <a href="#">Jobs</a></li>
-          <li> <a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <ul class="primary-nav flex">
+      <li><a href="#"><span class="highlight">News</span></a></li>
+      <li><a href="#">Events<span>&#8227;</span></a></li>
+      <li><a href="#">Business<span>&#8227;</span></a></li>
+      <li><a href="#">AMAs</a></li>
+      <li><a href="#">Spaces</a></li>
+      <li><a href="#">Terms & conditions</a></li>
+      <li class="right"><a href="#">About</a></li>
+      <li> <a href="#">Advertise</a></li>
+      <li> <a href="#">Jobs</a></li>
+      <li> <a href="#">Contact</a></li>
+    </ul>
     <div class="sticky-nav flex">
-      <ul>
+      <ul class="flex">
         <li><a href="#">LATEST</a></li>
         <li><a href="#">HARD FORK</a></li>
         <li><a href="#">PLUGGED</a></li>
         <li><a href="#">README</a></li>
-        <li><a href="#">GROWTH QUARTERS</a></li>
+        <li><a href="#"><span class="highlight-black">GROWTH QUARTERS</span></a></li>
         <li><a href="#">SHIFT</a></li>
         <li><a href="#">NEURAL</a></li>
       </ul>
-      <div class="icon-nav">
-        <a href="#"><i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i></a>
-        <a href="#" class="display-none"><i class="fa fa-bars" aria-hidden="true"></i></a>
-      </div>
+      <button class="right search-btn" type="button"><i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i></button>
+      <button class="display-none hamburguer-btn" type="button"><i class="fa fa-bars" aria-hidden="true"></i></button>
     </div>
+  </nav>
+  <div class="grid-main-section">
+    <article class="first-article">
+      <img src="assets/logo.svg" alt="tnw-logo">
+      <p class="time"> Wednesday - October 21, 2020</p>
+      <div class="title">
+      <h2>Lorem ipsum</h2>
+      <h1>Lorem ipsum</h1>
+      <p>by Christian <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i></a> Kroll 1 hour ago <a href="#"> <i class="fa fa-share-alt" aria-hidden="true"></i></a> 3</p>
+    </div>
+    </article>
+    <article class="second-article">
+      <h2>Lorem ipsum</h2>
+    </article>
+    <article class="third-article">
+      <div>
+      <h2>Lorem ipsum</h2>
+      <p>by Christian <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i></a> Kroll 1 hour ago <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a> 3</p>
+    </div>
+    </article>
   </div>
-    <div class="grid-main-section">
-      <article class="first-article">
-        <img src="assets/logo.svg" alt="tnw-logo">
-        <h2>Lorem ipsum</h2>
-        <p class="time"> Wednesday - October 21, 2020</p>
-      </article>
-      <article class="second-article">
-        <h2>Lorem ipsum</h2>
-      </article>
-      <article class="third-article">
-        <h2>Lorem ipsum</h2>
-      </article>
-    </div>
-    <main>
+  <main>
     <div class="wrapper">
       <h2><a href="#">Latest news</a></h2>
       <section class="latest-news-section">

@@ -11,6 +11,7 @@ img {
 body {
   max-width: 768px;
   min-width: 360px;
+  background-color: #bdaeaa38;
 }
 
 main {
@@ -40,14 +41,14 @@ a {
 
 .nav-logo img {
   width: 106px;
-  height: 50px;
+  height: 48px;
   background-color: black;
   padding: 17px;
 }
 
 .nav-grid {
   display: grid;
-  grid-template-columns: 0.1fr 1fr;
+  grid-template-columns: auto 1fr;
   grid-template-areas: "nav-logo sticky-nav";
 }
 
@@ -58,10 +59,6 @@ a {
   padding-left: 20px;
   width: 100%;
   display: none;
-}
-
-.primary-nav li {
-  display: inline;
 }
 
 .sticky-nav a {
@@ -112,6 +109,16 @@ a {
   margin-top: 10px;
 }
 
+.quick-links a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.bg-footer img {
+  width: 35px;
+  height: 9px;
+}
+
 .primary-nav li a {
   color: #858585;
   text-decoration: none;
@@ -125,26 +132,6 @@ a {
   display: inline-block;
   transform: rotate(90deg);
   font-size: 0.85rem;
-}
-
-.grid-main-section h1 {
-  font-family: sans-serif;
-  font-size: 100%;
-}
-
-.second-article h1 {
-  position: relative;
-  top: 175px;
-  padding: 15px;
-  font-size: 100%;
-}
-
-.first-article header>h1 {
-  grid-area: title;
-}
-
-.first-article header>a {
-  grid-area: category;
 }
 
 .wrapper h2 a {
@@ -164,21 +151,22 @@ a {
   color: white;
 }
 
-.primary-nav div {
-  float: right;
+.right {
+  margin-left: auto;
+}
+
+.hamburguer-btn,
+.search-btn {
+  font-size: 1.1rem;
+  padding: 0.7rem;
+  background: none;
+  border: solid 0.1px rgba(128, 128, 128, 0.411);
 }
 
 .sticky-nav {
   grid-area: sticky-nav;
   background-color: white;
-  padding-top: 15px;
-  padding-left: 20px;
-  padding-bottom: 15px;
-  height: auto;
-}
-
-.sticky-nav li {
-  display: inline;
+  height: 48px;
 }
 
 .sticky-nav ul li {
@@ -203,7 +191,7 @@ a {
 }
 
 .grid-main-section {
-  color: #666;
+  color: #fff;
   padding: 10px;
   display: grid;
   grid-gap: 10px;
@@ -213,6 +201,7 @@ a {
     "a1"
     "a2"
     "a3";
+  font-family: Avalon-regular, sans-serif;
 }
 
 .first-article {
@@ -220,21 +209,13 @@ a {
   background-image: linear-gradient(135deg, rgba(255, 4, 4, 0.61), rgba(0, 0, 0, 0.5)), linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/bitcoin.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 316px;
-}
-
-.first-article header {
+  height: 241px;
   display: inline-grid;
-  position: relative;
-  top: 500px;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr auto;
   grid-template-areas:
-    "category"
-    "title"
-    "autor";
-}
-
-.first-article header p {
-  grid-area: autor;
+    ". ."
+    "title title";
 }
 
 .first-article img {
@@ -246,13 +227,29 @@ a {
   left: 10px;
 }
 
+.title {
+  grid-area: title;
+  line-height: 1.5em;
+  padding-left: 10px;
+}
+
+.title h2 {
+  font-size: 0.7em;
+}
+
+.title h1 {
+  font-size: 1.8em;
+}
+
+.title p {
+  font-family: sans-serif;
+  font-size: 0.7em;
+  color: #555;
+}
+
 .time {
+  grid-area: date;
   display: none;
-  position: relative;
-  color: white;
-  float: right;
-  top: 10px;
-  right: 15px;
 }
 
 .second-article {
@@ -260,7 +257,14 @@ a {
   background-image: url(assets/img/restaurants.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 316px;
+  height: 241px;
+}
+
+.second-article h2 {
+  position: relative;
+  top: 190px;
+  padding: 10px;
+  font-size: 1.8em;
 }
 
 .third-article {
@@ -268,7 +272,23 @@ a {
   background-image: url(assets/img/laptop.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 316px;
+  height: 241px;
+}
+
+.third-article div {
+  position: relative;
+  top: 180px;
+  padding-left: 10px;
+}
+
+.third-article p,
+.third-article i {
+  color: #555;
+}
+
+.third-article p {
+  font-family: sans-serif;
+  font-size: 0.7em;
 }
 
 .wrapper {
@@ -575,11 +595,6 @@ a {
   padding: 35px 0 0 0;
 }
 
-.bg-footer img {
-  width: 35px;
-  height: 9px;
-}
-
 .color {
   background-color: #000;
   color: #aaa;
@@ -609,11 +624,6 @@ a {
 
 .love::before {
   content: " <3";
-}
-
-.quick-links a {
-  color: #aaa;
-  text-decoration: none;
 }
 
 @media screen and (max-width: 320px) {
