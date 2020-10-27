@@ -9,8 +9,8 @@ img {
 }
 
 body {
-  max-width: 1024px;
-  min-width: 700px;
+  max-width: 768px;
+  min-width: 360px;
 }
 
 main {
@@ -107,7 +107,6 @@ a {
 }
 
 .icon-nav a {
-  border: 1px solid blue;
   padding: 15px;
 }
 
@@ -499,7 +498,7 @@ a {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
-  height: 545px;
+  height: 420px;
   color: white;
   position: relative;
 }
