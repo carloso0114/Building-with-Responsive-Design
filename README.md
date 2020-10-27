@@ -4,8 +4,8 @@
 
 > This project consists of replicating the The Next Web website putting emphasis on how it behaves differently depending on the size of the screen where the website is rendered.
 
-![screenshot](/assets/app_screenshot.png)
-![screenshot](/assets/app_screenshot2.png)
+![screenshot](./assets/preview/app_screenshot.png)
+![screenshot](./assets/preview/app_screenshot2.png)
 
 I created this project using some images and buttons tags, also we used flex boxes, floats and grid systems for positioning.
 
