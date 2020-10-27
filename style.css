@@ -117,7 +117,7 @@ a {
 }
 
 .highlight {
-  color: white !important;
+  color: white;
 }
 
 .primary-nav li a span {
@@ -138,11 +138,11 @@ a {
   font-size: 100%;
 }
 
-.first-article header > h1 {
+.first-article header>h1 {
   grid-area: title;
 }
 
-.first-article header > a {
+.first-article header>a {
   grid-area: category;
 }
 
@@ -544,6 +544,10 @@ a {
   padding: 40px 0 40px 0;
 }
 
+.color p {
+  display: inline;
+}
+
 .quick-links {
   word-spacing: 0.5em;
   font-size: 0.8em;
@@ -556,4 +560,19 @@ a {
 
 .news section {
   width: 33.3%;
+}
+
+.love::before {
+  content: " <3";
+}
+
+.bg-footer img {
+  width: 35px;
+  height: 9px;
+}
+
+@media screen and (min-width: 322px) {
+  .quick-links br {
+    display: none;
+  }
 }
