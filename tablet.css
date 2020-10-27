@@ -417,6 +417,10 @@ a {
   grid-area: index-links;
 }
 
+.index-links a {
+  display: inline;
+}
+
 .tile1 {
   grid-area: tile1;
 }
