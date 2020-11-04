@@ -140,6 +140,10 @@ a {
   text-decoration: none;
 }
 
+.index-links a {
+  display: inline;
+}
+
 .primary-nav li a {
   color: #858585;
   text-decoration: none;
@@ -415,10 +419,6 @@ a {
 
 .index-links {
   grid-area: index-links;
-}
-
-.index-links a {
-  display: inline;
 }
 
 .tile1 {

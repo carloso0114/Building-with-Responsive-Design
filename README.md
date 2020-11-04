@@ -22,7 +22,7 @@ I created this project using some images and buttons tags, also we used flex box
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/carloso0114/Building-with-Responsive-Design/fa3b9ccdd9d29deecc1dd844e0a39199d621517d/index.html)
+[Live Demo Link](https://carloso0114.github.io/Building-with-Responsive-Design/.)
 
 
 
